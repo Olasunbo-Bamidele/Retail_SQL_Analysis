@@ -1,0 +1,5 @@
+--BASIC CHECK BEFORE WE START/EXPLORATION ANALYSIS
+SELECT count(*) FROM sales;
+SELECT DISTINCT product FROM sales;
+SELECT min(order_date), max(order_date) FROM sales;
+SELECT store_location, count(*) FROM sales GROUP BY store_location;
